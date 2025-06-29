@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Electric Car, Solar & Clean Energy | Tesla</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js">
+
+    </script>
 
 </head>
 
@@ -61,8 +63,61 @@
         </div>
 
     </header>
-
     <!-- Hero section -->
+    <section id="hero" class="w-full h-[450px] sm:h-[300px] md:h-[450px] relative">
+        <!-- Background Image -->
+        <img src="Images/HeroSection_1.jpg" alt="Hero Section Image"
+            class="absolute inset-0 w-full h-full object-cover z-0" />
+
+        <!-- Overlay Content -->
+        <div class="relative z-10 items-center text-white h-full text-center pt-20">
+            <h1 id="title" class="text-3xl md:text-5xl font-bold">Model 3</h1>
+            <p id="subtitle" class="mt-4 text-sm md:text-lg underline decoration-1 font-semibold">0% APR Ending June 30
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-4 space-y-4">
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <button class="bg-blue-600 text-white text-sm font-medium px-8 py-2 rounded hover:bg-blue-800 w-40">
+                        Order Now
+                    </button>
+                    <button class="bg-white text-black text-sm font-medium px-8 py-2 rounded hover:text-gray-600 w-40">
+                        View Inventory
+                    </button>
+                </div>
+            </div>
+            <!-- Bullets -->
+            <div class="mt-48 flex space-x-2 items-center justify-center">
+                <!-- Bullet 1 -->
+                <button onclick="changeImage(1)"
+                    class="size-3 rounded-full bg-white opacity-70 hover:opacity-100"></button>
+                <!-- Bullet 2 -->
+                <button onclick="changeImage(2)"
+                    class="size-3 rounded-full bg-white opacity-40 hover:opacity-100"></button>
+            </div>
+        </div>
+    </section>
+    <!-- Section-3 -->
+    <section class="mx-auto p-20 w-full h-screen">
+        <div class="flex flex-row gap-12">
+            <div id="div-1" class="w-100% h-100%">
+                <img class="rounded-xl" src="Images/Section_2.jpg" />
+            </div>
+            <div id="div-2">
+                <img src="Images/Section_2(1).jpg" />
+            </div>
+            <div id="div-3">
+                <img src="Images/Section_2(2).jpg" />
+            </div>
+            <div id="div-4">
+                <img src="Images/Section_2(3).jpg" />
+            </div>
+            <div id="div-5">
+                <img src="Images/Section_2(4).jpg" />
+            </div>
+        </div>
+
+    </section>
 </body>
 
 </html>
