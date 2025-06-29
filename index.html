@@ -8,40 +8,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Electric Car, Solar & Clean Energy | Tesla</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="script.js">
+
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="w-full top-0 left-0 fixed ">
-        <div class="flex justify-between items-center mx-w-7xl mx-auto px-6 py-3 pl-4 pr-4 border border-amber-600 h-15">
-            <!-- Tesla-logo -->
-            <div class="">
+    <header class="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 py-3 h-15">
+
+            <!-- Tesla Logo -->
+            <div class="flex-shrink-0">
                 <img class="h-15 md:h-25" src="Images/Tesla-logo.png" alt="Tesla-logo" />
             </div>
-            <!-- menu -->
-            <nav class="md:flex space-x-6 font-medium text-sm">
+
+            <!-- Center Menu - Hidden on small screens -->
+            <nav class="hidden md:flex space-x-6 font-medium text-sm">
                 <a href="#" class="hover:underline">Vehicles</a>
                 <a href="#" class="hover:underline">Energy</a>
                 <a href="#" class="hover:underline">Chargings</a>
                 <a href="#" class="hover:underline">Discover</a>
                 <a href="#" class="hover:underline">Shop</a>
             </nav>
-            <!-- nav-icon -->
-            <div class="flex justify-end items-center space-x-4 text-xl">
-                <i class="fa-regular fa-circle-question text-xl hover:bg-gray-200 py-1 px-1 rounded"></i>
-                <!-- Language Icon -->
-                <i class="fa-solid fa-globe text-xl hover:bg-gray-200 py-1 px-1 rounded"></i>
-                <!-- User Icon -->
-                <i class="fa-regular fa-user text-xl hover:bg-gray-200 py-1 px-1 rounded"></i>
 
+            <!-- Right Icons -->
+            <div class="flex items-center space-x-4 text-xl">
+                <i class="fa-regular fa-circle-question hover:bg-gray-200 py-1 px-1 rounded cursor-pointer"></i>
+                <i class="fa-solid fa-globe hover:bg-gray-200 py-1 px-1 rounded cursor-pointer"></i>
+                <i class="fa-regular fa-user hover:bg-gray-200 py-1 px-1 rounded cursor-pointer"></i>
             </div>
 
 
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
 
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden flex flex-col space-y-2 px-6 pb-4  md:hidden text-sm font-medium">
+            <a href="#" class="hover:underline">Vehicles</a>
+            <a href="#" class="hover:underline">Energy</a>
+            <a href="#" class="hover:underline">Chargings</a>
+            <a href="#" class="hover:underline">Discover</a>
+            <a href="#" class="hover:underline">Shop</a>
+            <div class="flex space-x-4 pt-2 text-xl">
+                <i class="fa-regular fa-circle-question"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
         </div>
 
     </header>
-    
+
+    <!-- Hero section -->
 </body>
 
 </html>
