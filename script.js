@@ -22,4 +22,3 @@ function changeImage(index) {
         subtitle.textContent = "Eligible for Tax Credit";
     }
 }
-
