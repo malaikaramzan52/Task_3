@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full max-w-4xl mx-auto relative">
+
+  <!-- Radio Buttons -->
+  <input type="radio" name="slider" id="slide1" class="hidden peer/slide1" checked>
+  <input type="radio" name="slider" id="slide2" class="hidden peer/slide2">
+  <input type="radio" name="slider" id="slide3" class="hidden peer/slide3">
+  <input type="radio" name="slider" id="slide4" class="hidden peer/slide4">
+  <input type="radio" name="slider" id="slide5" class="hidden peer/slide5">
+  <input type="radio" name="slider" id="slide6" class="hidden peer/slide6">
+
+  <!-- Images Wrapper -->
+  <div class="relative overflow-hidden h-[400px] rounded-lg">
+    <div class="flex transition-all duration-500">
+
+      <!-- Each image shown only if radio checked -->
+      <div class="w-full absolute inset-0 opacity-0 peer-checked/slide1:opacity-100">
+        <img src="Images/Section_2.jpg" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full absolute inset-0 opacity-0 peer-checked/slide2:opacity-100">
+        <img src="Images/Section_2(1).jpg" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full absolute inset-0 opacity-0 peer-checked/slide3:opacity-100">
+        <img src="Images/Section_2(2).jpg" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full absolute inset-0 opacity-0 peer-checked/slide4:opacity-100">
+        <img src="Images/Section_2(3).jpg" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full absolute inset-0 opacity-0 peer-checked/slide5:opacity-100">
+        <img src="Images/Section_2(4).jpg" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full absolute inset-0 opacity-0 peer-checked/slide6:opacity-100">
+        <img src="Images/Section_2(1).jpg" class="w-full h-full object-cover" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bullets -->
+  <div class="flex justify-center gap-3 mt-4">
+    <label for="slide1" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer peer-checked/slide1:bg-black"></label>
+    <label for="slide2" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer peer-checked/slide2:bg-black"></label>
+    <label for="slide3" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer peer-checked/slide3:bg-black"></label>
+    <label for="slide4" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer peer-checked/slide4:bg-black"></label>
+    <label for="slide5" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer peer-checked/slide5:bg-black"></label>
+    <label for="slide6" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer peer-checked/slide6:bg-black"></label>
+  </div>
+</div>
+
+</body>
+</html>

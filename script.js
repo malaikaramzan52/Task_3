@@ -1,4 +1,4 @@
-console.log("✅ script.js is working");
+
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -22,3 +22,4 @@ function changeImage(index) {
         subtitle.textContent = "Eligible for Tax Credit";
     }
 }
+// Section-3
