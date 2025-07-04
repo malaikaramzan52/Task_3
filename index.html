@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <title>Electric Car, Solar & Clean Energy | Tesla</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <script src="script.js"></script>
     <style>
         .scrollbar-none::-webkit-scrollbar {
@@ -214,55 +215,110 @@
     </section>
 
     <!-- Section_3 -->
- <section class="p-10 flex flex-col md:flex-row gap-6">
-  <!-- Card -->
-  <div class="bg-gray-100 w-full md:w-1/2 rounded-lg md:p-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
-    
-    <!-- Image on right for desktop, top for mobile -->
-    <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center ">
-      <img src="Images/1234.png" alt="Tesla Models" class="w-full md:w-[200px] object-contain" />
-    </div>
+    <section class="p-10 flex flex-col md:flex-row gap-6">
+        <!-- Card -->
+        <div
+            class="bg-gray-100 w-full md:w-1/2 rounded-lg md:p-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
 
-    <!-- Text content -->
-    <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
-      <h1 class="text-3xl font-semibold">Compare Models</h1>
-      <p class="text-gray-700 text">Find the Tesla vehicle that’s right for you.</p>
-      <button class="bg-white hover:bg-gray-200 text-black md:w-35 px-2 py-1 mt-3 rounded texttransition">
-        Compare Models
-      </button>
-    </div>
-</div>
-<!-- div-2 -->
- <div class="bg-gray-100 w-full md:pl-6 md:w-1/2 rounded-lg flex flex-col md:flex-row items-center justify-between gap-2">
-    
-    <!-- Image on right for desktop, top for mobile -->
-    <div class="w-full md:w-1/2 order-1 md:order-2  flex justify-center rounded-lg ">
-      <img src="Images/Charging.jpg" alt="Tesla Models" class="rounded-lg  w-full h-[150px] md:w-[200px] object-cover " />
-    </div>
+            <!-- Image on right for desktop, top for mobile -->
+            <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center ">
+                <img src="Images/1234.png" alt="Tesla Models" class="w-full md:w-[200px] object-contain" />
+            </div>
 
-    <!-- Text content -->
-    <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
-      <h1 class="text-3xl font-semibold">Charging</h1>
-      <p class="text-gray-700 text">Find the perfect charging solution.</p>
-      <button class="bg-white hover:bg-gray-200 text-black md:w-35 px-2 py-1 mt-3 mb-2 rounded texttransition">
-        Explore Charging
-      </button>
-    </div>
-</div>
+            <!-- Text content -->
+            <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                <h1 class="text-3xl font-semibold">Compare Models</h1>
+                <p class="text-gray-700 text">Find the Tesla vehicle that’s right for you.</p>
+                <button class="bg-white hover:bg-gray-200 text-black md:w-35 px-2 py-1 mt-3 rounded texttransition">
+                    Compare Models
+                </button>
+            </div>
+        </div>
+        <!-- div-2 -->
+        <div
+            class="bg-gray-100 w-full md:pl-6 md:w-1/2 rounded-lg flex flex-col md:flex-row items-center justify-between gap-2">
 
+            <!-- Image on right for desktop, top for mobile -->
+            <div class="w-full md:w-1/2 order-1 md:order-2  flex justify-center rounded-lg ">
+                <img src="Images/Charging.jpg" alt="Tesla Models"
+                    class="rounded-lg  w-full h-[150px] md:w-[200px] object-cover " />
+            </div>
 
-
-
-   </section>
-    <!-- Section-4 -->
-     <Section class="bg-gray-400 p-10 flex md:flex-row flex-col gap-4">
-        <div>
-            <Video autoplay loop muted playsinline>
-                <source src=""/>
-            </Video>
+            <!-- Text content -->
+            <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                <h1 class="text-3xl font-semibold">Charging</h1>
+                <p class="text-gray-700 text">Find the perfect charging solution.</p>
+                <button
+                    class="bg-white hover:bg-gray-200 text-black md:w-35 px-2 py-1 mt-3 mb-2 rounded texttransition">
+                    Explore Charging
+                </button>
+            </div>
         </div>
 
-     </Section>
+
+
+
+    </section>
+    <!-- Section-4 -->
+    <Section class="p-6 flex lg:flex-row flex-col gap-4 w-full h-full">
+        <div class=" w-full lg:w-[70%] rounded-xl relative overflow-hidden ">
+            <Video autoplay loop muted playsinline class="rounded-lg w-full h-auto ">
+                <source src="Videos/Video_2.mp4" type="video/mp4" />
+            </Video>
+            <div class="absolute bottom-4 left-4 z-10 text-white">
+                <!-- Heading -->
+                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3">
+                    Full Self-Driving (Supervised)
+                </h1>
+
+                <!-- Buttons -->
+                <div class="md:mt-4 mt-[2px] flex gap-2">
+                    <button class="bg-blue-600 px-4 py-1 rounded text-white md:w-34 hover:bg-blue-700">Demo
+                        Drive</button>
+                    <button class="bg-white px-4 py-1 rounded text-black md:w-34">Learn More</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full lg:w-[30%] relative">
+            <img class="rounded-lg md:h-[350px] md:w-full object-cover lg:h-[505px] lg:object-cover"
+                src="Images/Section_4(1).jpg" />
+            <div class="absolute bottom-4 left-4 z-10 text-white">
+                <!-- Heading -->
+                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3">
+                    World's First Autonomous Car Delivery
+                </h1>
+
+                <!-- Buttons -->
+                <div class="md:mt-4 mt-[2px] flex gap-2">
+                    <button class="bg-blue-600 px-4 py-1 rounded text-white md:w-34 hover:bg-blue-700">Watch
+                        Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </Section>
+    <!-- Section-5 -->
+    <section class="w-full h-[500px] relative p-6">
+        <!-- Google Map -->
+        <iframe class="w-full h-full rounded-xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49486988.58910447!2d-147.4977572!3d40.79619029999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2888e8f246ba5%3A0x8097e862bd59f081!2sTesla!5e0!3m2!1sen!2s!4v1751627453076!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Bottom Left Button: "Find Me" -->
+        <button
+            class="absolute bottom-24 left-8 flex items-center gap-2 bg-white text-black px-4 py-2 rounded shadow-md hover:bg-gray-200 text-sm">
+            <i class="fas fa-location-crosshairs"></i>
+            Find Me
+        </button>
+
+        <!-- Bottom Right Location Icon -->
+        <div class="absolute bottom-34 right-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 cursor-pointer">
+            <i class="fas fa-location-dot"></i>
+        </div>
+    </section>
 
 </body>
 
