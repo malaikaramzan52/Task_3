@@ -329,6 +329,18 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[550px\] {
+    height: 550px;
+  }
+  .h-\[600px\] {
+    height: 600px;
+  }
+  .h-\[700px\] {
+    height: 700px;
+  }
+  .h-\[800px\] {
+    height: 800px;
+  }
   .h-auto {
     height: auto;
   }
