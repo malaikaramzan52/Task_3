@@ -11,7 +11,6 @@ function changeImage(index) {
         console.log("Image not found.");
         return;
     }
-
     if (index === 1) {
         heroImg.src = "Images/HeroSection_1.jpg";
         title.textContent = "Model 3";
@@ -22,4 +21,3 @@ function changeImage(index) {
         subtitle.textContent = "Eligible for Tax Credit";
     }
 }
-// Section-3

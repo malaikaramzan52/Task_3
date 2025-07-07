@@ -75,10 +75,10 @@
 
     </header>
     <!-- Hero section -->
-    <section id="hero" class="w-full h-[500px] relative">
+    <section id="hero" class="w-full h-[400px] relative">
         <!-- Background Image -->
         <img src="Images/HeroSection_1.jpg" alt="Hero Section Image"
-            class="absolute inset-0 w-full h-full object-cover z-0" />
+            class="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ease-in-out opacity-100" />
 
         <!-- Overlay Content -->
         <div class="relative z-10 items-center text-white h-full text-center pt-20">
@@ -98,7 +98,7 @@
                 </div>
 
                 <!-- Bullets -->
-                <div class="mt-52 flex space-x-2 items-center justify-center p-4 lg:mb-2">
+                <div class="md:mt-32 mt-28 flex space-x-2 items-center justify-center p-4 lg:mb-2">
                     <!-- Bullet 1 -->
                     <button onclick="changeImage(1)"
                         class="size-3 rounded-full bg-white opacity-70 hover:opacity-100"></button>
@@ -218,7 +218,7 @@
     <section class="p-10 flex flex-col md:flex-row gap-6">
         <!-- Card -->
         <div
-            class="bg-gray-100 w-full md:w-1/2 rounded-lg md:p-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
+            class="bg-gray-100 w-full md:w-1/2 rounded-lg md:p-6  flex flex-col md:flex-row items-center justify-between gap-2">
 
             <!-- Image on right for desktop, top for mobile -->
             <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center ">
@@ -228,7 +228,7 @@
             <!-- Text content -->
             <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
                 <h1 class="text-3xl font-semibold">Compare Models</h1>
-                <p class="text-gray-700 text">Find the Tesla vehicle that’s right for you.</p>
+                <p class="text-gray-700 text-sm">Find the Tesla vehicle that’s right for you.</p>
                 <button class="bg-white hover:bg-gray-200 text-black md:w-35 px-2 py-1 mt-3 rounded texttransition">
                     Compare Models
                 </button>
@@ -247,7 +247,7 @@
             <!-- Text content -->
             <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
                 <h1 class="text-3xl font-semibold">Charging</h1>
-                <p class="text-gray-700 text">Find the perfect charging solution.</p>
+                <p class="text-gray-700 text-sm">Find the perfect charging solution.</p>
                 <button
                     class="bg-white hover:bg-gray-200 text-black md:w-35 px-2 py-1 mt-3 mb-2 rounded texttransition">
                     Explore Charging
@@ -262,31 +262,30 @@
     <!-- Section-4 -->
     <Section class="p-6 flex lg:flex-row flex-col gap-4 w-full h-full">
         <div class=" w-full lg:w-[70%] rounded-xl relative overflow-hidden ">
-            <Video autoplay loop muted playsinline class="rounded-lg w-full h-full object-cover">
-                <source src="Videos/Video_2.mp4" type="video/mp4" />
-            </Video>
-            <div class="absolute bottom-4 left-4 z-10 text-white">
-                <!-- Heading -->
-                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3">
-                    Full Self-Driving (Supervised)
-                </h1>
+                <Video autoplay loop muted playsinline class="rounded-lg w-full h-full object-cover">
+                    <source src="Videos/Video_2.mp4" type="video/mp4" />
+                </Video>
+                <div class="absolute bottom-4 left-4 z-10 text-white">
+                    <!-- Heading -->
+                    <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3">
+                        Full Self-Driving (Supervised)
+                    </h1>
 
-                <!-- Buttons -->
-                <div class="md:mt-4 mt-[2px] flex gap-2">
-                    <button class="bg-blue-600 px-4 py-1 rounded text-white md:w-34 hover:bg-blue-700">Demo
-                        Drive</button>
-                    <button class="bg-white px-4 py-1 rounded text-black md:w-34">Learn More</button>
+                    <!-- Buttons -->
+                    <div class="md:mt-4 mt-[2px] flex gap-2">
+                        <button class="bg-blue-600 px-4 py-1 rounded text-white md:w-34 hover:bg-blue-700">Demo
+                            Drive</button>
+                        <button class="bg-white px-4 py-1 rounded text-black md:w-34">Learn More</button>
+                    </div>
                 </div>
-
-            </div>
         </div>
 
         <div class="w-full lg:w-[30%] relative">
-            <img class="rounded-lg md:h-[350px] md:w-full object-cover lg:h-[505px] lg:object-cover"
+            <img class="rounded-lg aspect-[3/4] md:aspect-[3/2] lg:aspect-[3/5] object-cover lg:object-cover"
                 src="Images/Section_4(1).jpg" />
             <div class="absolute bottom-4 left-4 z-10 text-white">
                 <!-- Heading -->
-                <h1 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-3">
+                <h1 class="font-bold  text-3xl mb-3">
                     World's First Autonomous Car Delivery
                 </h1>
 
@@ -321,7 +320,7 @@
     </section>
     <!-- Section-6 -->
     <section class="px-6 py-6">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
 
             <!-- Left Side -->
             <div class="flex-1 text-left space-y-4">
@@ -444,10 +443,10 @@
         </div>
     </section>
     <!-- Section-8 -->
-     <section class="p-10 md:p-15">
-           <div class="text-[10px] md:text-xs text-gray-500 leading-tight px-4 justify-center">
-            <p>¹ Model S and Model X included only when purchased through <span
-                    class="underline">inventory</span> and must be model year 2025. Frost Blue Metallic
+    <section class="p-10 md:p-15">
+        <div class="text-[10px] md:text-xs text-gray-500 leading-tight px-4 justify-center">
+            <p>¹ Model S and Model X included only when purchased through <span class="underline">inventory</span> and
+                must be model year 2025. Frost Blue Metallic
                 excluded. New vehicles and U.S. only. Subject to availability. The cost of the color upgrade will be
                 removed from the final price prior to delivery.</p>
             <p class="mt-2">² Model X All-Wheel Drive starts at $91,630. Price includes Destination and Order Fees but
@@ -457,35 +456,36 @@
                 excludes taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the
                 price.</p>
         </div>
-</section>
-<!-- Footer -->
- <footer class="bg-white  pt-4 pb-6 px-4 md:px-8 text-center md:text-left">
-  <div class="text-[12px] md:text[10px] text-gray-500 flex flex-col md:flex-row justify-center gap-2 flex-wrap">
-    <span>Tesla © 2025</span>
-    <a href="#" class="hover:underline">Privacy & Legal</a>
-    <a href="#" class="hover:underline">Vehicle Recalls</a>
-    <a href="#" class="hidden md:inline hover:underline">Contact</a>
-    <a href="#" class="hover:underline">News</a>
-    <a href="#" class=" hidden md:inline hover:underline">Get Updates</a>
-    <a href="#" class=" hidden md:inline hover:underline">Locations</a>
-    <a href="#" class="hover:underline">Learn</a>
-  </div>
-  <!-- Help bar -->
-  <div class="mt-8 pt-2 flex md:flex-row justify-center items-center gap-4 bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
-    <!-- Ask a Question -->
-    <button class="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded text-sm hover:bg-gray-100">
-      <span class="text-gray-600">💬</span>
-      <p class="text-gray-600 text-xs hidden md:inline">Ask a question</p>
-      <span class="text-gray-500 hidden md:inline text-xs">"Where can I drive the Model 3?"</span>
-    </button>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-white  pt-4 pb-6 px-4 md:px-8 text-center md:text-left">
+        <div class="text-[12px] md:text[10px] text-gray-500 flex flex-col md:flex-row justify-center gap-2 flex-wrap">
+            <span>Tesla © 2025</span>
+            <a href="#" class="hover:underline">Privacy & Legal</a>
+            <a href="#" class="hover:underline">Vehicle Recalls</a>
+            <a href="#" class="hidden md:inline hover:underline">Contact</a>
+            <a href="#" class="hover:underline">News</a>
+            <a href="#" class=" hidden md:inline hover:underline">Get Updates</a>
+            <a href="#" class=" hidden md:inline hover:underline">Locations</a>
+            <a href="#" class="hover:underline">Learn</a>
+        </div>
+        <!-- Help bar -->
+        <div
+            class="mt-8 pt-2 flex md:flex-row justify-center items-center gap-4 bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+            <!-- Ask a Question -->
+            <button class="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded text-sm hover:bg-gray-100">
+                <span class="text-gray-600">💬</span>
+                <p class="text-gray-600 text-xs hidden md:inline">Ask a question</p>
+                <span class="text-gray-500 hidden md:inline text-xs">"Where can I drive the Model 3?"</span>
+            </button>
 
-    <!-- Schedule Drive -->
-    <button class="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded text-sm hover:bg-gray-100">
-      <i class="fas fa-car text-blue-600"></i>
-      <p class="text-gray-600 text-xs font-semibold">Schedule a Drive Today</p>
-    </button>
-  </div>
-</footer>
+            <!-- Schedule Drive -->
+            <button class="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded text-sm hover:bg-gray-100">
+                <i class="fas fa-car text-blue-600"></i>
+                <p class="text-gray-600 text-xs font-semibold">Schedule a Drive Today</p>
+            </button>
+        </div>
+    </footer>
 
 </body>
 
