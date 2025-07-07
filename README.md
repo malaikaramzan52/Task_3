@@ -32,5 +32,5 @@ A simple responsive clone of Tesla's homepage using **HTML**, **Tailwind CSS**, 
 
 ##  Output Preview
 
-👉 [Click here to view the live site](https://malaikaramzan52.github.io/Task_3/)
+👉 https://malaikaramzan52.github.io/Task_3/
 
